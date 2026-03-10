@@ -21,7 +21,7 @@ jobs:
           IMAGE_NAME: pythonimage
         run: |
           docker build -t $DOCKERHUB_USERNAME/$IMAGE_NAME .
-          docker push $DOCKERHUB_USERNAME/$IMAGE_NAME:latest
+          docker push $DOCKERHUB_USERNAME/$IMAGE_NAME
 
   test:
     runs-on: ubuntu-latest
